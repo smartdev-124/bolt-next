@@ -94,7 +94,7 @@ const ScopePanel: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 overflow-y-auto scrollbar-thin scrollbar-track-scroll-track scrollbar-thumb-scroll-thumb p-3">
+        <div className="grid grid-cols-1 overflow-y-auto scrollbar-thin scrollbar-track-scroll-track scrollbar-thumb-scroll-thumb p-3 gap-2">
           {cryptoAssets.map((cryptoAsset, index) => (
             <Token key={index} {...cryptoAsset} />
           ))}

@@ -31,9 +31,21 @@ export default {
         },
       },
       animation: {
+        flip: "flip 3s linear infinite",
+        rotate: "rotate 3s linear infinite",
         'aura': 'aura-pulse 0.5s ease-in-out',
       },
       keyframes: {
+        flip: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
+        rotate: {
+          to: {
+            transform: "rotate(360deg)",
+          },
+        },
         'aura-pulse': {
           '0%': {
             opacity: '0.8',
